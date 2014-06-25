@@ -11,7 +11,6 @@ set tabstop=4
 set bs=2
 colorscheme wombat
 set cursorline
- 
 set autochdir autoread autowrite
 set autoread
 set incsearch ignorecase smartcase
@@ -35,8 +34,13 @@ map <c-k> <c-w>k<c-w>_
 map <c-h> <c-w>h
 map <c-l> <c-w>l
 
+" Settings about plugins
 filetype plugin indent on
 map <F2> :NERDTreeToggle<CR>
+map <Leader>h :GundoToggle<CR>
+let g:SuperTabDefaultCompletionType = "context"
+set completeopt=menuone,longest,preview
+au FileType python set omnifunc=pythoncomplete#Complete
 au BufRead,BufNewFile *.md set filetype=markdown
 
 " latex-related settings
