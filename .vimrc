@@ -38,11 +38,14 @@ map <c-l> <c-w>l
 filetype plugin indent on
 map <F2> :NERDTreeToggle<CR>
 map <Leader>h :GundoToggle<CR>
+
+set laststatus=2	" for airline
 set hidden 	" for lusty
 let g:SuperTabDefaultCompletionType = "context"  " for supertab
-let g:pep8_map='<leader>8' " for pep8
 set completeopt=menuone,longest,preview  " for supertab
-au FileType python set omnifunc=pythoncomplete#Complete
+au FileType python set omnifunc=pythoncomplete#Complete	" for supertab
+let g:pep8_map='<leader>8' " for pep8
+
 au BufRead,BufNewFile *.md set filetype=markdown
 
 " latex-related settings
