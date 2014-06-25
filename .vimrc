@@ -39,13 +39,15 @@ filetype plugin indent on
 map <F2> :NERDTreeToggle<CR>
 map <Leader>h :GundoToggle<CR>
 
+let g:jedi#completions_command = "<C-N>"  " for jedi-vim
+let g:jedi#use_tabs_not_buffers = 0   " for jedi-vim
 set laststatus=2	" for airline
 let g:airline#extensions#tabline#enabled = 1  " for airline
 let g:airline_powerline_fonts = 1  " for airline
 set hidden 	" for lusty
 let g:SuperTabDefaultCompletionType = "context"  " for supertab
 set completeopt=menuone,longest,preview  " for supertab
-au FileType python set omnifunc=pythoncomplete#Complete	" for supertab
+" au FileType python set omnifunc=jedi#complete " for supertab and jedi
 let g:pep8_map='<leader>8' " for pep8
 set grepprg=grep\ -nH\ $* " for vim-latex
 let g:tex_flavor='latex' " for vim-latex
