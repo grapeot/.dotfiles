@@ -40,6 +40,7 @@ map <F2> :NERDTreeToggle<CR>
 map <Leader>h :GundoToggle<CR>
 
 set laststatus=2	" for airline
+let g:airline_powerline_fonts = 1  " for airline
 set hidden 	" for lusty
 let g:SuperTabDefaultCompletionType = "context"  " for supertab
 set completeopt=menuone,longest,preview  " for supertab
