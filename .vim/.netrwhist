@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/Users/grapeot/Dropbox/tmp'
+let g:netrw_dirhist_2='/Users/grapeot/Dropbox/tmp/FirstSolo'
+let g:netrw_dirhist_3='/Users/grapeot/Dropbox/tmp'
+let g:netrw_dirhist_4='/Users/grapeot/Dropbox/tmp/MSReport'

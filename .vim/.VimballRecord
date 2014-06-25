@@ -1,0 +1,1 @@
+screen.vba: call delete('/Users/grapeot/.vim/autoload/screen.vim')|call delete('/Users/grapeot/.vim/doc/screen.txt')|call delete('/Users/grapeot/.vim/plugin/screen.vim')
