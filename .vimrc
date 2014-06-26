@@ -1,3 +1,5 @@
+set nocompatible " must be the first line
+
 "Initialize pathogen
 filetype off
 call pathogen#incubate()
@@ -16,8 +18,8 @@ set autoread
 set incsearch ignorecase smartcase
 set nobackup
 set bs=indent,eol,start
-set nocp
 set ek ru sc 
+set nocp
  
 " gui related settings
 set guifont=consolas:h16
