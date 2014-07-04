@@ -24,7 +24,7 @@ set nocp
 " gui related settings
 if has("unix")
   let s:uname = system("uname -s")
-  if s:uname == "Darwin"
+  if s:uname == "Darwin\n"
     " Do Mac stuff here
     set guifont=Droid\ Sans\ Mono\ for\ Powerline:h15
   endif
