@@ -22,7 +22,15 @@ set ek ru sc
 set nocp
  
 " gui related settings
-set guifont=consolas:h16
+if has("unix")
+  let s:uname = system("uname -s")
+  if s:uname == "Darwin"
+    " Do Mac stuff here
+    set guifont=Droid\ Sans\ Mono\ for\ Powerline:h15
+  endif
+else
+    set guifont=Consolas:h14
+endif
 set guioptions-=T
 set guioptions-=R
 set guioptions-=L
