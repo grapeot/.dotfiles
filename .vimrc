@@ -39,14 +39,13 @@ set guioptions-=l
  
 " key binding about window movement
 set wmh=0
-map <c-j> <c-w>j<c-w>_
-map <c-k> <c-w>k<c-w>_
 map <c-h> <c-w>h
 map <c-l> <c-w>l
 
 " Settings about plugins
 filetype plugin indent on
 map <F2> :NERDTreeToggle<CR>
+map <Leader>a :TlistToggle<CR>
 map <Leader>h :GundoToggle<CR>
 
 let g:jedi#completions_command = "<C-N>"  " for jedi-vim
