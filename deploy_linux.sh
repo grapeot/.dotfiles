@@ -1,4 +1,4 @@
-sudo apt-get install ack-grep ctags # required by ack.vim and taglist
+sudo apt-get install -y ack-grep ctags # required by ack.vim and taglist
 
 pushd ~
 mv .vim .vim.bak
