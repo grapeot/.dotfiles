@@ -45,7 +45,8 @@ map <c-l> <c-w>l
 " Settings about plugins
 filetype plugin indent on
 map <F2> :NERDTreeToggle<CR>
-map <Leader>a :TlistToggle<CR>
+map <Leader>a :Ack<CR>
+map <Leader>g :TlistToggle<CR>
 map <Leader>h :GundoToggle<CR>
 
 let g:jedi#completions_command = "<C-N>"  " for jedi-vim
