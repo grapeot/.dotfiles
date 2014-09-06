@@ -44,6 +44,14 @@ set -o vi
 # Customize to your needs...
 export PATH=$PATH:/usr/local/bin:/usr/bin:/bin:/sbin
 
+# alias
+alias su="su -"
+alias sudo="sudo -E"
+alias less='less -r'
+alias tree='tree -C'
+alias skim="(head -5; tail -5) <"
+alias cp="cp -v"
+alias mkdir="mkdir -p"
 alias df='df -h'
 alias du='du -h'
 alias xrun='xargs -n 1 -I{} bash -c'
