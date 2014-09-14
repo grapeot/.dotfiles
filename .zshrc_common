@@ -60,6 +60,7 @@ alias gs='git status'
 alias gm='git commit -m'
 alias gma='git commit -a -m'
 alias gc='git checkout'
+alias sl='ls'
 
 PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig
 export PKG_CONFIG_PATH
