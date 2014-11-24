@@ -76,3 +76,6 @@
 [submodule ".vim/bundle/vim-jade"]
 	path = .vim/bundle/vim-jade
 	url = https://github.com/digitaltoad/vim-jade
+[submodule ".vim/bundle/gdbmgr"]
+	path = .vim/bundle/gdbmgr
+	url = https://github.com/vim-scripts/gdbmgr
