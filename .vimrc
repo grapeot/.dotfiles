@@ -41,6 +41,9 @@ set guioptions-=l
 set wmh=0
 map <c-h> <c-w>h
 map <c-l> <c-w>l
+" and makefile
+map <F6> :make<CR>
+map <F5> :!`echo ./% \| sed 's/.cpp//'`<CR>
 
 " Settings about plugins
 filetype plugin indent on
