@@ -41,8 +41,15 @@ set guioptions-=l
 set wmh=0
 map <c-h> <c-w>h
 map <c-l> <c-w>l
-" and makefile
-map <F6> :make<CR>
+" and makefile (we make a more niubility make here)
+function NBMake()
+    if filereadable('Makefile')
+        make
+    else
+        SCCompile
+    endif
+endfunction
+map <F6> :call NBMake()<CR>
 map <F5> :!`echo ./% \| sed 's/.cpp//'`<CR>
 
 " Settings about plugins
