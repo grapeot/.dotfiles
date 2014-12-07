@@ -73,3 +73,6 @@
 [submodule ".vim/bundle/gdbmgr"]
 	path = .vim/bundle/gdbmgr
 	url = https://github.com/vim-scripts/gdbmgr
+[submodule ".vim/bundle/SingleCompile"]
+	path = .vim/bundle/SingleCompile
+	url = https://github.com/grapeot/SingleCompile
