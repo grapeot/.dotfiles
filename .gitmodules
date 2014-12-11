@@ -76,3 +76,6 @@
 [submodule ".vim/bundle/SingleCompile"]
 	path = .vim/bundle/SingleCompile
 	url = https://github.com/grapeot/SingleCompile
+[submodule ".vim/bundle/vim-snippets"]
+	path = .vim/bundle/vim-snippets
+	url = https://github.com/grapeot/vim-snippets
