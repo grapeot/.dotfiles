@@ -55,7 +55,7 @@ map <F5> :!`echo ./% \| sed 's/.cpp//'`<CR>
 " Settings about plugins
 map <Leader> <Plug>(easymotion-prefix)
 let g:neocomplcache_enable_at_startup = 1
-let g:indentLine_char = 'c'
+let g:indentLine_char = '|'
 filetype plugin indent on
 map <F2> :NERDTreeToggle<CR>
 map <Leader>a :Ack<CR>
