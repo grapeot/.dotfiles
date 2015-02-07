@@ -57,6 +57,7 @@ map <Leader> <Plug>(easymotion-prefix)
 let g:neocomplcache_enable_at_startup = 1
 let g:indentLine_char = '|'
 filetype plugin indent on
+let g:tex_conceal= ''  " disable the newly released conceal mode of Vim 7.3
 map <F2> :NERDTreeToggle<CR>
 map <Leader>a :Ack<CR>
 map <Leader>g :TlistToggle<CR>
