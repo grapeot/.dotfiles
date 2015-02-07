@@ -82,3 +82,6 @@
 [submodule ".vim/bundle/neocomplcache.vim"]
 	path = .vim/bundle/neocomplcache.vim
 	url = https://github.com/Shougo/neocomplcache.vim
+[submodule ".vim/bundle/tabular"]
+	path = .vim/bundle/tabular
+	url = https://github.com/godlygeek/tabular
