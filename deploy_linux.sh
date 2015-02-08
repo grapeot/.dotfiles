@@ -10,6 +10,3 @@ ln -s .dotfiles/.vimrc .vimrc
 ln -s .dotfiles/.zshrc .zshrc
 ln -s .dotfiles/.tmux.conf .tmux.conf
 cd -
-cd ~/.dotfiles/.vim/bundle/YouCompleteMe/
-./install.sh --clang-completer &
-cd -
