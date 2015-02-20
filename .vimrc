@@ -67,8 +67,8 @@ set laststatus=2	" for airline
 let g:airline#extensions#tabline#enabled = 1  " for airline
 let g:airline_powerline_fonts = 1  " for airline
 set hidden 	" for lusty
-let g:SuperTabDefaultCompletionType = "context"  " for supertab
-set completeopt=menuone,longest,preview  " for supertab
+"let g:SuperTabDefaultCompletionType = "context"  " for supertab
+"set completeopt=menuone,longest,preview  " for supertab
 let g:pep8_map='<leader>8' " for pep8
 set grepprg=grep\ -nH\ $* " for vim-latex
 let g:tex_flavor='latex' " for vim-latex
@@ -118,7 +118,7 @@ endfunction
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 " <C-h>, <BS>: close popup and delete backword char.
 inoremap <expr><C-h> neocomplete#smart_close_popup()."\<C-h>"
-inoremap <expr><BS> neocomplete#smart_close_popup()."\<C-h>"
+"inoremap <expr><BS> neocomplete#smart_close_popup()."\<C-h>"
 inoremap <expr><C-y>  neocomplete#close_popup()
 inoremap <expr><C-e>  neocomplete#cancel_popup()
 " Close popup by <Space>.
