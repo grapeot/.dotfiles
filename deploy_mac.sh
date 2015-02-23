@@ -10,3 +10,6 @@ ln -s .dotfiles/.vimrc .vimrc
 ln -s .dotfiles/.zshrc.mac .zshrc
 ln -s .dotfiles/.tmux.conf .tmux.conf
 popd
+
+brew install socat psutils coreutils
+pip install powerline-status
