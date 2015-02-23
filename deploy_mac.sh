@@ -11,5 +11,8 @@ ln -s .dotfiles/.zshrc.mac .zshrc
 ln -s .dotfiles/.tmux.conf .tmux.conf
 popd
 
-brew install socat psutils coreutils
-pip install powerline-status
+brew install socat coreutils
+pip install powerline-status psutil
+export POWERLINE_ROOT=/usr/local/lib/python2.7/site-packages/powerline
+cp $POWERLINE_ROOT/config_files/themes/tmux/default.json $POWERLINE_ROOT/config_files/themes/tmux/default.json.bak 
+cp grapeot.json $POWERLINE_ROOT/config_files/themes/tmux/default.json 
