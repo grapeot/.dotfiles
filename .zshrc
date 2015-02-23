@@ -12,3 +12,4 @@ alias open='xdg-open'
 PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig
 export PKG_CONFIG_PATH
 export LD_LIBRARY_PATH="$HOME/.vim/bundle/gdbmgr/gdbmgr/src:default"
+export POWERLINE_ROOT=/usr/local/lib/python2.7/dist-packages/powerline

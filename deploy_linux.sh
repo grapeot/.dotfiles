@@ -10,3 +10,11 @@ ln -s .dotfiles/.vimrc .vimrc
 ln -s .dotfiles/.zshrc .zshrc
 ln -s .dotfiles/.tmux.conf .tmux.conf
 cd -
+
+# install powerline
+sudo apt-get install -y socat psutils # dependencies
+sudo pip install powerline-status
+# config fonts for powerline
+git clone https://github.com/powerline/fonts
+./fonts/install.sh
+rm -rf fonts

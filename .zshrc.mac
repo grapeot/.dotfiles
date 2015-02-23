@@ -12,3 +12,4 @@ export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 
 PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig
 export PKG_CONFIG_PATH
+export POWERLINE_ROOT=/usr/local/lib/python2.7/site-packages/powerline
