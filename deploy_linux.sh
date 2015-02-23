@@ -20,5 +20,5 @@ git clone https://github.com/powerline/fonts
 rm -rf fonts
 # copy our theme
 export POWERLINE_ROOT=/usr/local/lib/python2.7/dist-packages/powerline
-cp $POWERLINE_ROOT/config_files/themes/tmux/default.json $POWERLINE_ROOT/config_files/themes/tmux/default.json.bak 
-cp grapeot.json $POWERLINE_ROOT/config_files/themes/tmux/default.json 
+sudo cp $POWERLINE_ROOT/config_files/themes/tmux/default.json $POWERLINE_ROOT/config_files/themes/tmux/default.json.bak 
+sudo cp grapeot.json $POWERLINE_ROOT/config_files/themes/tmux/default.json 
