@@ -42,7 +42,7 @@ source $ZSH/oh-my-zsh.sh
 set -o vi
 
 # Customize to your needs...
-export PATH=$PATH:/usr/local/bin:/usr/bin:/bin:/sbin
+export PATH=/usr/local/bin:/usr/bin:/bin:/sbin:$PATH
 
 # alias
 alias su="su -"
