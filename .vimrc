@@ -167,6 +167,10 @@ let g:neocomplete#sources#omni#input_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
 set foldmethod=indent
 set foldlevel=99
 
+" views
+autocmd BufWinLeave *.* mkview
+autocmd BufWinEnter *.* silent loadview 
+
 " some robustness tricks 
 command W w
 command Q q
