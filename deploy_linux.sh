@@ -12,7 +12,7 @@ ln -s .dotfiles/.tmux.conf .tmux.conf
 cd -
 
 # install powerline
-sudo apt-get install -y socat # dependencies
+sudo apt-get install -y socat python-pip # dependencies
 sudo pip install powerline-status psutil
 # config fonts for powerline
 git clone https://github.com/powerline/fonts
