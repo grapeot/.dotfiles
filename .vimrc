@@ -29,7 +29,7 @@ if has("unix")
     set guifont=Droid\ Sans\ Mono\ for\ Powerline:h15
   endif
 else
-    set guifont=Consolas:h14
+    set guifont=Consolas:h16
 endif
 set guioptions-=T
 set guioptions-=R
