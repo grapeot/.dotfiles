@@ -62,6 +62,10 @@ alias gma='git commit -a -m'
 alias gc='git checkout'
 alias sl='ls'
 
+# enhanced zsh history search
+bindkey -M vicmd "?" history-beginning-search-backward
+bindkey -M vicmd ">" history-beginning-search-forward
+
 PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig
 export PKG_CONFIG_PATH
 
