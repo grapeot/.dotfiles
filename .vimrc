@@ -11,6 +11,7 @@ set si ai nu et
 set shiftwidth=4
 set tabstop=4
 set bs=2
+set scrolloff=3 
 colorscheme wombat
 set cursorline
 set autochdir autoread autowrite
