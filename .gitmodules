@@ -91,3 +91,6 @@
 [submodule ".vim/bundle/vim-multiple-cursors"]
 	path = .vim/bundle/vim-multiple-cursors
 	url = https://github.com/terryma/vim-multiple-cursors
+[submodule ".vim/bundle/vim-cellmode"]
+	path = .vim/bundle/vim-cellmode
+	url = https://github.com/julienr/vim-cellmode
