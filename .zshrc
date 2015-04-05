@@ -8,6 +8,7 @@ plugins=(git debian command-not-found coffee npm node python redis-cli tmux vagr
 alias ls='ls --color=auto -h'
 alias rm='trash-put'
 alias open='xdg-open'
+alias grep='grep -P'
 
 PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig
 export TERM=xterm-256color
