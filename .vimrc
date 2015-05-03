@@ -21,6 +21,9 @@ set nobackup
 set bs=indent,eol,start
 set ek ru sc 
 set nocp
+" Relative line number in normal mode
+autocmd InsertEnter * :set norelativenumber nu
+autocmd InsertLeave * :set rnu
  
 " gui related settings
 if has("unix")
