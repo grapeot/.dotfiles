@@ -1,5 +1,9 @@
 set nocompatible " must be the first line
 
+if has('win32') || has('win64')
+    set runtimepath=$HOME/.vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,$HOME/.vim/after
+endif
+
 "Initialize pathogen
 filetype off
 call pathogen#incubate()
