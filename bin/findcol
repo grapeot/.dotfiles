@@ -1,0 +1,10 @@
+#!/bin/bash
+
+if [ ! $# -eq 2 ]; then
+    echo 'findcol <tsv file name> <column name>'
+    echo 'findcol: find the column index (starting from 1) matching the given header.'
+    exit 255
+fi
+
+awkStatement="{for(i=1;i<NF;i++) if(\$i==\"$2\") print i;}"
+head -n1 "$1" | awk -F'	' "$awkStatement"

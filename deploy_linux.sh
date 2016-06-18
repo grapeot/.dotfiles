@@ -22,3 +22,6 @@ rm -rf fonts
 export POWERLINE_ROOT=/usr/local/lib/python2.7/dist-packages/powerline
 sudo cp $POWERLINE_ROOT/config_files/themes/tmux/default.json $POWERLINE_ROOT/config_files/themes/tmux/default.json.bak 
 sudo cp grapeot.json $POWERLINE_ROOT/config_files/themes/tmux/default.json 
+
+# copy the utilities
+cp bin/findcol /usr/bin

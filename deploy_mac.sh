@@ -16,3 +16,6 @@ pip install powerline-status psutil
 export POWERLINE_ROOT=/usr/local/lib/python2.7/site-packages/powerline
 cp $POWERLINE_ROOT/config_files/themes/tmux/default.json $POWERLINE_ROOT/config_files/themes/tmux/default.json.bak 
 cp grapeot.json $POWERLINE_ROOT/config_files/themes/tmux/default.json 
+
+# copy the utilities
+cp bin/findcol /usr/bin
