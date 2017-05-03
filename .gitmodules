@@ -73,3 +73,9 @@
 [submodule ".vim/bundle/LycosaExplorer"]
 	path = .vim/bundle/LycosaExplorer
 	url = https://github.com/vim-scripts/LycosaExplorer
+[submodule ".vim/bundle/neosnippet.vim"]
+	path = .vim/bundle/neosnippet.vim
+	url = https://github.com/Shougo/neosnippet.vim
+[submodule ".vim/bundle/neosnippet-snippets"]
+	path = .vim/bundle/neosnippet-snippets
+	url = https://github.com/Shougo/neosnippet-snippets
