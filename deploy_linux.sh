@@ -14,6 +14,7 @@ cd -
 # install powerline
 sudo apt-get install -y socat python-pip # dependencies
 sudo pip install powerline-status psutil
+sudo pip install flake8
 # config fonts for powerline
 git clone https://github.com/powerline/fonts
 ./fonts/install.sh

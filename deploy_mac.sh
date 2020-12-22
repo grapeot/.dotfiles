@@ -13,6 +13,7 @@ popd
 
 brew install socat coreutils
 pip install powerline-status psutil
+pip install flake8
 export POWERLINE_ROOT=/usr/local/lib/python2.7/site-packages/powerline
 cp $POWERLINE_ROOT/config_files/themes/tmux/default.json $POWERLINE_ROOT/config_files/themes/tmux/default.json.bak 
 cp grapeot.json $POWERLINE_ROOT/config_files/themes/tmux/default.json 
