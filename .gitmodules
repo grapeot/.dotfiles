@@ -34,9 +34,6 @@
 [submodule ".vim/bundle/nerdcommenter"]
 	path = .vim/bundle/nerdcommenter
 	url = https://github.com/scrooloose/nerdcommenter
-[submodule ".vim/bundle/taglist.vim"]
-	path = .vim/bundle/taglist.vim
-	url = https://github.com/vim-scripts/taglist.vim
 [submodule ".vim/bundle/vim-node"]
 	path = .vim/bundle/vim-node
 	url = https://github.com/moll/vim-node.git
@@ -67,9 +64,6 @@
 [submodule ".vim/bundle/vim-cellmode"]
 	path = .vim/bundle/vim-cellmode
 	url = https://github.com/julienr/vim-cellmode
-[submodule ".vim/bundle/LycosaExplorer"]
-	path = .vim/bundle/LycosaExplorer
-	url = https://github.com/vim-scripts/LycosaExplorer
 [submodule ".vim/bundle/neosnippet.vim"]
 	path = .vim/bundle/neosnippet.vim
 	url = https://github.com/Shougo/neosnippet.vim
