@@ -12,9 +12,9 @@ ln -s .dotfiles/.tmux.conf .tmux.conf
 cd -
 
 # install powerline
-sudo apt-get install -y socat python-pip # dependencies
-sudo pip install powerline-status psutil
-sudo pip install flake8
+sudo apt-get install -y socat python3-pip # dependencies
+sudo python3 -m pip install powerline-status psutil
+sudo python3 -m pip install flake8
 # config fonts for powerline
 git clone https://github.com/powerline/fonts
 ./fonts/install.sh
