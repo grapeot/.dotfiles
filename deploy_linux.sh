@@ -13,4 +13,7 @@ ln -sf .dotfiles/.vimrc .vimrc
 ln -sf .dotfiles/.zshrc .zshrc
 ln -sf .dotfiles/.tmux.conf .tmux.conf
 
+mkdir -p .config
+ln -sf "$HOME/.dotfiles/.config/nvim" .config/nvim
+
 popd > /dev/null

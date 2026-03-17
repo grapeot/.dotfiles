@@ -13,7 +13,7 @@ ln -sf .dotfiles/.vimrc .vimrc
 ln -sf .dotfiles/.zshrc.mac .zshrc
 ln -sf .dotfiles/.tmux.conf .tmux.conf
 
-popd > /dev/null
+mkdir -p .config
+ln -sf "$HOME/.dotfiles/.config/nvim" .config/nvim
 
-mkdir -p "$HOME/.local/bin"
-cp bin/findcol "$HOME/.local/bin/findcol" 2>/dev/null || true
+popd > /dev/null
