@@ -1,22 +1,19 @@
-brew install ack  # required by ack.vim
+#!/usr/bin/env bash
+set -euo pipefail
 
-pushd ~
-mv .vim .vim.bak
-mv .vimrc .vimrc.bak
-mv .zshrc .zshrc.bak
-mv .tmux.conf .tmux.conf.bak
-ln -s .dotfiles/.vim .vim
-ln -s .dotfiles/.vimrc .vimrc
-ln -s .dotfiles/.zshrc.mac .zshrc
-ln -s .dotfiles/.tmux.conf .tmux.conf
-popd
+pushd ~ > /dev/null
 
-brew install socat coreutils
-pip install powerline-status psutil
-pip install flake8
-export POWERLINE_ROOT=/usr/local/lib/python2.7/site-packages/powerline
-cp $POWERLINE_ROOT/config_files/themes/tmux/default.json $POWERLINE_ROOT/config_files/themes/tmux/default.json.bak 
-cp grapeot.json $POWERLINE_ROOT/config_files/themes/tmux/default.json 
+mv .vim .vim.bak 2>/dev/null || true
+mv .vimrc .vimrc.bak 2>/dev/null || true
+mv .zshrc .zshrc.bak 2>/dev/null || true
+mv .tmux.conf .tmux.conf.bak 2>/dev/null || true
 
-# copy the utilities
-cp bin/findcol /usr/bin
+ln -sf .dotfiles/.vim .vim
+ln -sf .dotfiles/.vimrc .vimrc
+ln -sf .dotfiles/.zshrc.mac .zshrc
+ln -sf .dotfiles/.tmux.conf .tmux.conf
+
+popd > /dev/null
+
+mkdir -p "$HOME/.local/bin"
+cp bin/findcol "$HOME/.local/bin/findcol" 2>/dev/null || true
