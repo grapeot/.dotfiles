@@ -1,28 +1,19 @@
-sudo apt-get install -y ack-grep ctags python-dev # required by ack.vim and taglist and YCM
+#!/usr/bin/env bash
+set -euo pipefail
 
-cd ~
-mv .vim .vim.bak
-mv .vimrc .vimrc.bak
-mv .zshrc .zshrc.bak
-mv .tmux.conf .tmux.conf.bak
-ln -s .dotfiles/.vim .vim
-ln -s .dotfiles/.vimrc .vimrc
-ln -s .dotfiles/.zshrc .zshrc
-ln -s .dotfiles/.tmux.conf .tmux.conf
-cd -
+pushd ~ > /dev/null
 
-# install powerline
-sudo apt-get install -y socat python3-pip # dependencies
-sudo python3 -m pip install powerline-status psutil
-sudo python3 -m pip install flake8
-# config fonts for powerline
-git clone https://github.com/powerline/fonts
-./fonts/install.sh
-rm -rf fonts
-# copy our theme
-export POWERLINE_ROOT=/usr/local/lib/python2.7/dist-packages/powerline
-sudo cp $POWERLINE_ROOT/config_files/themes/tmux/default.json $POWERLINE_ROOT/config_files/themes/tmux/default.json.bak 
-sudo cp grapeot.json $POWERLINE_ROOT/config_files/themes/tmux/default.json 
+mv .vim .vim.bak 2>/dev/null || true
+mv .vimrc .vimrc.bak 2>/dev/null || true
+mv .zshrc .zshrc.bak 2>/dev/null || true
+mv .tmux.conf .tmux.conf.bak 2>/dev/null || true
 
-# copy the utilities
-cp bin/findcol /usr/bin
+ln -sf .dotfiles/.vim .vim
+ln -sf .dotfiles/.vimrc .vimrc
+ln -sf .dotfiles/.zshrc .zshrc
+ln -sf .dotfiles/.tmux.conf .tmux.conf
+
+mkdir -p .config
+ln -sf "$HOME/.dotfiles/.config/nvim" .config/nvim
+
+popd > /dev/null
